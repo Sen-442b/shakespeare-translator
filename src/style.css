@@ -52,11 +52,12 @@ opacity: 0.8;
 }
  #btn-convert{
      margin: 10px;
-     background: transparent;
+     
      padding: 10px;
      border-radius: 3px;
      font-family: inherit;
-     background-color: lightcoral;
+     background-image: url('/images/75e41ef1aebfb7bcff008e9450481371.jpg');
+     color: inherit;
      font-size: 1rem;
  }
 
@@ -86,5 +87,9 @@ padding:2px;
   border-radius: 4px;
    
 
+}
+
+::placeholder{
+    color: inherit;
 }
 /* Photo by FWStudio from Pexels */
