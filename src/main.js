@@ -11,6 +11,7 @@ btnConvert.addEventListener('click',()=>{
     fetch(generateURL())
     .then((result)=> result.json())
     .then((data)=>displayData(data))
+    .catch((error) => displayError(error))
 })
 
 
@@ -24,5 +25,11 @@ function generateURL(){
 }
 
 function displayData(data){
+    
    output.innerHTML = data.contents.translated
+}
+
+async function displayError(error){
+    console.log(error)
+    alert(`The server is not responding due some error kindly try again later`)
 }
